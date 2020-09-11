@@ -1,24 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Survey Page</title>
-  <link rel="stylesheet" type="text/css" title="Cool stylesheet" href="style.css">
+  <link rel="stylesheet" type="text/css" title="Cool stylesheet" href="index.css">
 </head>
+
 <body>
   <div id="main">
-  <div  class="text-center">
-    <h1 id="title">freeCodeCamp Survey Form</h1>
-  </div>
-  <div>
-    <p id="description">This is a simple form to get feedback from our users</p>
-  </div>
-  <form id="survey-form">
-    <input type="text" id="name" placeholder="Full Name" required>
-    <br>
-    Email:<input id="email" placeholder="Email" type="text" required>
+    <div class="text-center">
+      <h1 id="title">freeCodeCamp Survey Form</h1>
+    </div>
+    <div>
+      <p id="description">This is a simple form to get feedback from our users</p>
+    </div>
+    <form id="survey-form">
+      <label for="name" id="name-label">Name</label>
+      <input type="text" id="name" placeholder="Full Name" required>
+      <br>
+      <label for="email" id="email-label">Email</label>
+      <input id="email" placeholder="Email" type="email" id="email-label" required>
+      <br>
+      <label for="dropdown" id="dropdown-label">How was your experience?</label>
+      <select name="survey" id="dropdown">
+        <option value="aboveAverage">Above Average</option>
+        <option value="average">Average</option>
+        <option value="belowAverage">Below Average</option>
+      </select>
+      <br>
+      <label for="radio" id="yes-np">Will you be back?</label>
+      Yes<input type="radio" name="yes-no" value="yes" placeholder="Yes">
+      No<input type="radio" name="yes-no" value="no"placeholder="No">
+      <br>
+      <label for="checkbox" id="checkbox-label">Sign up for emails?</label>
+      Yes<input type="checkbox" name="yes-no1" value="yes">
+      No<input type="checkbox" name="yes-no1" value="no">
+      <br>
+      <label for="number" id="number-label">Please rate this survey 1-10</label>
+      <input id="number" placeholder="1-10" type="number" min="1" max="10" id="number-label">
+      <br>
+      <label for="textarea" id="textarea-label">Anything else?</label>
+      <br>
+      <textarea id="textarea" name="textarea" rows="3" cols="10">
+      </textarea>
+      <br>
+      <button type="submit" id="submit">Submit</button>
   </div>
 </body>
 <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
 </html>
