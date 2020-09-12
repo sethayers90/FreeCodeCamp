@@ -1,0 +1,26 @@
+#header{
+  display:flex;
+  display: inline;
+
+  }
+ul{
+  list-style-type: none;
+  display: inline;
+  position: fixed;
+}
+li{
+  display: inline;
+  position: fixed;
+}
+.headerLogo{
+  display: inline;
+  position: fixed;
+}
+nav{
+  display: inline;
+  position: fixed;
+}
+.nav{
+  padding-left: 45%;
+  position: fixed;
+}
